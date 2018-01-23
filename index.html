@@ -61,18 +61,20 @@
             height:100%;
         }
         .bottom-container {
-            background-color:blue;
+            background-color:rgba(20, 77, 69, 0.774);
             height: 500px;
             width:100%;
             margin-top:20px;
         }
         .left-sidebar {
-            width:130px;
+            width:180px;
             height:100%;
-            background-color:red;
+            background-color:rgb(0, 153, 255);
+            float: left;
         }
         .left-sidebar ul {
             display: block;
+            text-align: center;
         }
         .left-sidebar li {
             display: block;
@@ -80,9 +82,26 @@
             border-bottom:1px solid #FFF;
         }
         .left-sidebar ul li a {
-            color:white;
+            color:#CCC;
             padding:10px;
             display: block;
+            text-decoration: none;
+            font-weight: bold;
+            transition-duration: 0.5s;
+        }
+        .left-sidebar ul li a:hover {
+            color:#FFF;
+            opacity: 0.5;
+            background-color: coral;
+        
+        }
+        .gallery {
+        padding: 15px;
+        background-color: red;
+        width: calc(100% - 210px);
+        float: left;
+        height: calc(100% - 30px);
+
         }
 
 
@@ -115,6 +134,7 @@
                 </ul>
             </aside>
             <div class="gallery">
+                <h3>Gallery</h3>
 
             </div>
         </div>
