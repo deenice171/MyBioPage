@@ -25,14 +25,15 @@
         }
 
         .main-footer {
-            position: absolute;
+            position: relative;
             bottom: 0;
             left: 0;
             right: 0;
         }
+
         .legal-text {
             text-align: center;
-    
+
         }
 
         .main-container {
@@ -112,7 +113,7 @@
         .gallery {
             padding: 15px;
             background-color: rgb(150, 147, 147);
-            width: calc(100% - 211px);
+            width: calc(100% - 491px);
             float: left;
             height: calc(100% - 30px);
 
@@ -132,8 +133,9 @@
             width: 100%;
 
         }
-        tbody{
-            overflow:auto;
+
+        tbody {
+            overflow: auto;
             display: block;
 
         }
@@ -142,15 +144,39 @@
             padding: 5px;
             width: 20%;
         }
-        table.gallery-table img{
+
+        table.gallery-table img {
             width: 230px;
             height: 200px;
 
         }
-        .box-shadow{
+
+        .box-shadow {}
+
+
+        .right-sidebar {
+            width: 250px;
+            height: 100%;
+            background-color: red;
+             float: right;
+        }
+
+        .right-sidebar ul {
+            list-style-type: none;
+        }
+
+        .course-table {
+            width: 100%;
+             background-color: red;
+            margin-top: 20px;
 
         }
-    
+
+        .course-table tr td {
+            padding: 5px;
+            border: 1px solid #CCC;
+
+        }
     </style>
 </head>
 
@@ -164,10 +190,11 @@
                 <img src="./img/avatar.png" rel="my avater">
             </div>
             <h2>My Biography</h2>
-            <p>My Name is Denise Dedekian and I am a senior here at Fresno State. I was born and raised in Fresno, but I'd love to move somewhere else after graduating. I work as a waitress at a family owned Italian restaurant. I enjoy my
-                job very much because I get to meet so many interesting people. When I have some spare time, I love watching
-                movies, playing with my dogs, and spending time with my friends or family. I've decided to include some 
-                pictures highlighting some of my favorite hobbies or interests to help you get to know me.
+            <p>My Name is Denise Dedekian and I am a senior here at Fresno State. I was born and raised in Fresno, but I'd love
+                to move somewhere else after graduating. I work as a waitress at a family owned Italian restaurant. I enjoy
+                my job very much because I get to meet so many interesting people. When I have some spare time, I love watching
+                movies, playing with my dogs, and spending time with my friends or family. I've decided to include some pictures
+                highlighting some of my favorite hobbies or interests to help you get to know me.
             </p>
 
         </div>
@@ -181,7 +208,7 @@
                         <a href="./courses.html">My Courses</a>
                     </li>
                     <li>
-                        <a href="#">Gallery</a>
+                        <a href="#">Link</a>
                     </li>
                     <li>
                         <a href="#">Link</a>
@@ -194,50 +221,76 @@
                     </li>
                 </ul>
             </aside>
+            <aside class="right-sidebar">
+                <h3>Sub Nav</h3>
+                <ul class="navigation">
+                    <li>
+                        <a href="./index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./courses.html">My Courses</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                    <li>
+                        <a href="#">Link</a>
+                    </li>
+                </ul>
+            </aside>
+
             <div class="gallery">
-                <h3>Gallery</h3>
-                <table class="gallery-table" cellpadding="2">
-                    <thead>
-                        <tr>
+                <h3>My Courses</h3>
+                <table class="course-table" cellpadding="2">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Courses</td>
+                                <td>Section</td>
+                                <td>Instructor</td>
+                                <td>Days</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>IS 183</td>
+                                <td>Phan</td>
+                                <td>T TH</td>
+                            </tr>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>IS 183</td>
+                                <td>Phan</td>
+                                <td>T TH</td>
+                            </tr>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>IS 183</td>
+                                <td>Phan</td>
+                                <td>T TH</td>
+                            </tr>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>IS 183</td>
+                                <td>Phan</td>
+                                <td>T TH</td>
+                            </tr>
+                            <tr>
+                                <td>Web Design</td>
+                                <td>IS 183</td>
+                                <td>Phan</td>
+                                <td>T TH</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                            <TD>1</TD>
-                            <TD>2</TD>
-                            <TD>3</TD>
-                            <TD>4</TD>
-
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <TD>
-                                <img src="./img/10.jpg" alt="princess bride">
-                            </TD>
-                            <TD>
-                                <img src="./img/16.jpg" alt="family">
-                            </TD>
-                            <TD>
-                                <img src="./img/12.jpg" alt="pug">
-                            </TD>
-                            <TD>
-                                <img src="./img/13.jpg" alt="aussie">
-                            </TD>
-                        </tr>
-                        <tr>
-                            <TD>
-                                <img src="./img/14.jpg" alt="pasta">
-                            </TD>
-                            <TD>
-                                <img src="./img/15.jpg" alt="reading">
-                            </TD>
-                            <TD>
-                                <img src="./img/18.jpg" alt="disney">
-                            </TD>
-                            <TD>
-                                <img src="./img/17.jpg" alt="carmel">
-                            </TD>
-                        </tr>
-                    </tbody>
-                </table>
 
             </div>
         </div>
