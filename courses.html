@@ -1,183 +1,8 @@
-<!DOCTYPE html>
-<html>
-
 <head>
     <!-- This is a comment -->
     <title>MY BIO PAGE</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <link rel="stylesheet" href="./css/courses.css"/>
 
-        .main-header,
-        .main-footer {
-            background-color: #ccc;
-            height: 50px;
-        }
-
-        .logo,
-        .legal-text {
-            display: block;
-            padding: 10px 5px 10px 5px;
-            height: 30px;
-            padding-top: 15px;
-        }
-
-        .main-footer {
-            position: relative;
-            bottom: 0;
-            left: 0;
-            right: 0;
-        }
-
-        .legal-text {
-            text-align: center;
-
-        }
-
-        .main-container {
-
-            background-color: white;
-            width: 80%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            margin: 10px auto;
-            overflow: auto;
-        }
-
-        .bio-container {
-            height: 140px;
-            background-color: #CCC;
-        }
-
-        .avatar {
-            width: 180px;
-            height: 140px;
-            background: red;
-            float: left;
-            margin-right: 15px;
-            position: relative;
-        }
-
-        .avatar img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .bottom-container {
-            background-color: #ccc;
-            height: 500px;
-            width: 100%;
-            margin-top: 20px;
-        }
-
-        .left-sidebar {
-            width: 180px;
-            height: 100%;
-            background-color: rgb(45, 158, 179);
-            float: left;
-            border-right: 1px solid #DDD;
-
-
-        }
-
-        .left-sidebar ul {
-            display: block;
-            text-align: center;
-        }
-
-        .left-sidebar li {
-            display: block;
-            width: 100%;
-            border-bottom: 1px solid #FFF;
-        }
-
-        .left-sidebar ul li a {
-            color: #CCC;
-            padding: 10px;
-            display: block;
-            text-decoration: none;
-            font-weight: bold;
-            transition-duration: 0.5s;
-        }
-
-        .left-sidebar ul li a:hover {
-            color: #FFF;
-            opacity: 0.5;
-            background-color: rgb(8, 255, 214);
-
-        }
-
-        .gallery {
-            padding: 15px;
-            background-color: rgb(150, 147, 147);
-            width: calc(100% - 491px);
-            float: left;
-            height: calc(100% - 30px);
-
-        }
-
-        table.gallery-table {
-            display: block;
-            width: 100%;
-            border: 1px solid #CCC;
-            overflow: auto;
-            margin-top: 20px;
-
-
-        }
-
-        table.gallery-table tr {
-            width: 100%;
-
-        }
-
-        tbody {
-            overflow: auto;
-            display: block;
-
-        }
-
-        table.gallery-table tr td {
-            padding: 5px;
-            width: 20%;
-        }
-
-        table.gallery-table img {
-            width: 230px;
-            height: 200px;
-
-        }
-
-        .box-shadow {}
-
-
-        .right-sidebar {
-            width: 250px;
-            height: 100%;
-            background-color: red;
-             float: right;
-        }
-
-        .right-sidebar ul {
-            list-style-type: none;
-        }
-
-        .course-table {
-            width: 100%;
-             background-color: red;
-            margin-top: 20px;
-
-        }
-
-        .course-table tr td {
-            padding: 5px;
-            border: 1px solid #CCC;
-
-        }
-    </style>
 </head>
 
 <body>
@@ -185,114 +10,73 @@
         <span class="logo">Denise Dedekian</span>
     </header>
     <div class="main-container">
-        <div class="bio-container">
+        <div class="bio-container box-shadow">
             <div class="avatar">
-                <img src="./img/avatar.png" rel="my avater">
+                <img src="./img/avatar3.png" rel="my avater">
             </div>
             <h2>My Biography</h2>
-            <p>My Name is Denise Dedekian and I am a senior here at Fresno State. I was born and raised in Fresno, but I'd love
-                to move somewhere else after graduating. I work as a waitress at a family owned Italian restaurant. I enjoy
-                my job very much because I get to meet so many interesting people. When I have some spare time, I love watching
-                movies, playing with my dogs, and spending time with my friends or family. I've decided to include some pictures
-                highlighting some of my favorite hobbies or interests to help you get to know me.
-            </p>
-
+            <p>Below are a list of all the courses I am taking this semester at Fresno State!</p>
+            
         </div>
-        <div class="bottom-container">
+        <div class="bottom-container box-shadow">
             <aside class="left-sidebar">
                 <ul class="navigation">
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./courses.html">My Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./courses.html">My Courses</a></li>                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="./login.html">Login</a></li>
                 </ul>
             </aside>
-            <aside class="right-sidebar">
-                <h3>Sub Nav</h3>
-                <ul class="navigation">
-                    <li>
-                        <a href="./index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./courses.html">My Courses</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                    <li>
-                        <a href="#">Link</a>
-                    </li>
-                </ul>
-            </aside>
-
             <div class="gallery">
                 <h3>My Courses</h3>
                 <table class="course-table" cellpadding="2">
-                    <table>
-                        <thead>
-                            <tr>
-                                <td>Courses</td>
-                                <td>Section</td>
-                                <td>Instructor</td>
-                                <td>Days</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Web Design</td>
-                                <td>IS 183</td>
-                                <td>Phan</td>
-                                <td>T TH</td>
-                            </tr>
-                            <tr>
-                                <td>Web Design</td>
-                                <td>IS 183</td>
-                                <td>Phan</td>
-                                <td>T TH</td>
-                            </tr>
-                            <tr>
-                                <td>Web Design</td>
-                                <td>IS 183</td>
-                                <td>Phan</td>
-                                <td>T TH</td>
-                            </tr>
-                            <tr>
-                                <td>Web Design</td>
-                                <td>IS 183</td>
-                                <td>Phan</td>
-                                <td>T TH</td>
-                            </tr>
-                            <tr>
-                                <td>Web Design</td>
-                                <td>IS 183</td>
-                                <td>Phan</td>
-                                <td>T TH</td>
-                            </tr>
-                        </tbody>
-                    </table>
-
-
+                  <thead>
+                    <tr>
+                      <td>Courses</td>
+                      <td>Section</td>
+                      <td>Instructor</td>
+                      <td>Days</td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Advanced Website Development</td>
+                      <td>IS 183</td>
+                      <td>Phan</td>
+                      <td>Tuesday/Thursday</td>
+                    </tr>
+                    <tr>
+                      <td>Management</td>
+                      <td>MGT 110</td>
+                      <td>Biggane</td>
+                      <td>Tuesday/Thursday</td>
+                    </tr>
+                    <tr>
+                      <td>Principles of Finance</td>
+                      <td>FIN 120</td>
+                      <td>Yazdipour</td>
+                      <td>Online</td>
+                    </tr>
+                    <tr>
+                      <td>Systems Analysis and Design</td>
+                      <td>IS 166</td>
+                      <td>Rahmatian</td>
+                      <td>Tuesday/Thursday</td>
+                    </tr>
+                  </tbody>
+                </table>
             </div>
+            <aside class="right-sidebar">
+                <h3>Sub Nav</h3>
+                <ul class="navigation">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./courses.html">My Courses</a></li>                    
+                    <li><a href="#">Link</a></li>
+                    <li><a href="./login.html">Login</a></li>
+                </ul>
+            </aside>
+
         </div>
     </div>
     <footer class="main-footer">
